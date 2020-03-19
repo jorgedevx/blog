@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>SNAKE GAME</title>
+		<style type="text/css" media="screen">
+
+			.boardx{
+			   /*display: inline-block;*/
+			}
+
+			.cell{
+		           border-style: solid;
+		           border-width: thin;
+		           width: 10px;
+		           height: 10px;
+			}
+
+			div {
+			    float: left;
+			}
+
+			div:nth-child(30n+1) {
+			   /* PODIA SER PARAMETERIZADO*/
+ 			   clear: left;
+			}
+
+			.life{
+			  background-color: blue;
+			}
+
+			.snake{
+			  background-color: green;
+			}
+
+			.snack{
+			  background-color: red;
+			}
+
+		</style>
+		<script charset="utf-8" src="main.js">
+
+
+		</script>
+	</head>
+	<body>
+		<p id="score"></p>
+
+		<div style="text-align:inline;">
+			<button onclick="aaa();">start</button>
+			<button onclick="bbb();">pause</button>
+			<button onclick="ccc();">restart</button>
+			
+		</div>
+
+		</br>
+		</br>
+
+		<div id="board" class="boardx">
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Conway's game of life</title>
+		<style type="text/css" media="screen">
+
+			.boardx{
+			   /*display: inline-block;*/
+			}
+
+			.cell{
+		           border-style: solid;
+		           border-width: thin;
+		           width: 10px;
+		           height: 10px;
+			}
+
+			div {
+			    float: left;
+			}
+
+			div:nth-child(30n+1) {
+ 			   clear: left;
+			}
+
+			.life{
+				background-color: blue;
+			}
+		</style>
+		<script charset="utf-8" src="main.js">
+
+		</script>
+	</head>
+	<body>
+		<div id="board" class="boardx">
+		</div>
+	</body>
+</html>

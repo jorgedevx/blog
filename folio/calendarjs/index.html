@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title> Calendar demo </title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Calendar -->
+    <script src="/blog/static/js/jquery-1.11.0.min.js"></script>
+    <link href="css/calendar.css" rel="stylesheet"  type='text/css'>
+    <script src="js/calendar.min.js"></script>
+
+
+    <style>
+
+    	body{
+          /*font-family: 'inherit', serif;font-size: 48px;font-weight: bold;color: #000;*/
+      }
+
+		  .bluex{
+		    background-color: #4d90fe;
+      }
+      
+		  .orange{
+		    background-color: #ffa500; /*#F7F7F7;*/
+      }
+      
+		  .fade {
+		    opacity: 0.5;
+		    transition: opacity .25s ease-in-out;
+		    -moz-transition: opacity .25s ease-in-out;
+		    -webkit-transition: opacity .25s ease-in-out;
+		  }
+
+		  .fade:hover {
+		    opacity: 1;
+		  }
+      
+      .p {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #777;
+      }
+    </style>
+
+    
+    
+  </head>
+
+  <body>
+
+    <header class="bar bar-nav">
+    </header>
+
+    <div class="bar bar-standard bar-header-secondary orange">
+        <h4 class="title" id= "titulo">  </h4>
+    </div>
+
+    <div class="content">
+        <center><div id="mainCalendar" class="wrapper"></div></center>
+    </div>
+
+    </body>
+
+	<script>
+		cec('mainCalendar');
+	</script>
+
+</html>
