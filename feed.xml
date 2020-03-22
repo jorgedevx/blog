@@ -5,8 +5,8 @@
     <description>Personal articles</description>
     <link>http://localhost:4000/blog/</link>
     <atom:link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Mar 2020 18:00:53 +0100</pubDate>
-    <lastBuildDate>Sun, 22 Mar 2020 18:00:53 +0100</lastBuildDate>
+    <pubDate>Sun, 22 Mar 2020 18:09:00 +0100</pubDate>
+    <lastBuildDate>Sun, 22 Mar 2020 18:09:00 +0100</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
