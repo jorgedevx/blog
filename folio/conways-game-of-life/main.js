@@ -1,8 +1,8 @@
 
 window.onload = function(){
     var board = document.getElementById("board");
-    var aaa = 900;
-    var bbb = 30;
+    var aaa = 400;
+    var bbb = 20;
     var ccc = 500;
     var eee = [];
     for(var i=0; i<aaa; i++){ eee.push(false);}
@@ -30,7 +30,6 @@ window.onload = function(){
             hhh.classList.add("life");
             iii.classList.add("life");
             jjj.classList.add("life");
-
 
             eee[cellid] = true;
             eee[cellid2] = true;
