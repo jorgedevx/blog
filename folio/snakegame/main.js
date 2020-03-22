@@ -1,5 +1,5 @@
 var ggg = true;
-var hhh = 30;
+var hhh = 20;
 var iii = Math.pow(hhh,2);
 var jjj = 150;
 var kkk = 0;
@@ -161,11 +161,11 @@ window.onload = function(){
 	   var incx = CURqqq[0];
 	   var incy = CURqqq[1];
 	   var hi = uuu % (hhh);
-	   if(hi==29 && qqq=='ooo'){
-		   hi=30;
+	   if(hi==19 && qqq=='ooo'){
+		   hi=20;
 	   }
 	   if(hi==0 && qqq=='ppp'){
-		   hi=30;
+		   hi=20;
 	   }
 	   var hj = parseInt(uuu / hhh);
 	   
