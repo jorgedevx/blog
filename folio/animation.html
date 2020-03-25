@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/blog/static/img/favicon.ico" />
-    <title>Cool Project - Articles</title>
+    <title>animation - Articles</title>
     <meta name="author" content="Jorge E." />
-    <meta name="description" content="Cool Project" />
-    <meta name="keywords" content="Cool Project, Articles, " />
+    <meta name="description" content="animation" />
+    <meta name="keywords" content="animation, Articles, folio" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="1749788565247320" property="fb:app_id">
     <meta content="Articles" property="og:site_name">
@@ -16,31 +16,28 @@
     
 
     
-      <meta content="Cool Project" property="og:title">
+      <meta content="animation" property="og:title">
       <meta content="article" property="og:type">
     
 
     
-      <meta content="Personal articles" property="og:description">
+      <meta content="Animation example." property="og:description">
     
 
     
-      <meta content="http://localhost:4000/blog/project/cool-project/" property="og:url">
+      <meta content="http://localhost:4000/folio/animation" property="og:url">
     
 
-    
-      <meta content="2020-03-25T16:36:15+01:00" property="article:published_time">
-      <meta content="http://localhost:4000/about/" property="article:author">
     
 
     
 
     
       
+        <meta content="folio" property="article:section">
+      
     
 
-    
-      
     
 
     <meta name="twitter:card" content="summary">
@@ -48,15 +45,15 @@
     <meta name="twitter:creator" content="@github.io">
 
     
-      <meta name="twitter:title" content="Cool Project">
+      <meta name="twitter:title" content="animation">
     
 
     
-      <meta name="twitter:url" content="http://localhost:4000/blog/project/cool-project/">
+      <meta name="twitter:url" content="http://localhost:4000/folio/animation">
     
 
     
-      <meta name="twitter:description" content="Personal articles">
+      <meta name="twitter:description" content="Animation example.">
     
 
     
@@ -116,35 +113,18 @@
         <!-- end /.fixed-condition -->
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
-        <article class="post">
-  <header class="post-header">
-    <h1 class="post-title">Cool Project</h1>
-    
-      
-    
-      
-    
-      
-    
-      
-    
-  </header>
+        <h1>Animation example.</h1>
+<iframe id="proj" name="proj" src="/blog/folio/animationwww" onload='javascript:(function(o){setFocus();o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));' style="height:100vh;width:65vw;border:none;overflow:hidden;"></iframe>
 
-  <div class="content">
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    <hr />
-    <p>Just a demo text for now, which signifies there is lot of scope for improvement.</p>
+<footer>
+    <script>
+        function setFocus(){
+            //alert(JSON.stringify(document.getElementById("proj").contentWindow.document));
+            document.getElementById("proj").contentWindow.document.body.focus();
+        }
 
-  </div>
-</article>
+    </script>
+</footer>
 
         <footer>
           &copy; Jorge E.

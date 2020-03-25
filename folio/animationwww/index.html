@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <style>
+            body{
+                background: black;
+                font-family: poppins;
+                overflow-x: hidden;
+                transition: all ease 0.5%;
+            }
+            img{
+                width: 100%;
+            }
+
+            #maintitle{
+                font-size: 100px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+                margin-top: 50vh;
+                margin-left: 20vw;
+                font-family: Comic Sans MS, cursive, sans-serif;
+                position: fixed;
+                z-index: 2;
+            }
+            .slider{
+                margin-top: 40vh;
+                margin-left: 40vw;
+                z-index: 1;
+                position: absolute;
+            }
+        </style>
+        <script src="argh.min.js"></script>
+        <script src="/blog/static/js/jquery-1.11.0.min.js"></script>
+
+
+        <script>
+            window.onload = function(){
+                const elem = document.getElementById("maintitle");
+                TweenMax.to(elem, 0.1, {x:"+=5", yoyo:true, repeat:5});
+                var tl = new TimelineLite();
+                $("#slider").val(0);
+
+            }
+        </script>
+    </head>
+    <body>
+        <div class="slider">
+            <input id="slider" type="range" min="0" max="255" value="0">
+        </div>
+        <div id="maintitle"> ANIMATION! </div>
+        <div id="lifecounter"> </div>
+
+
+    </body>
+    <script>
+
+        function changeBg(){
+            console.log(this.value);
+
+            var tl = new TimelineMax({ repeat: 0 })
+            tl.to($("body"), 2, { css: { backgroundColor:'rgba('+this.value+',' + this.value + ',' + this.value +',1)'} }, )
+            const v = 255 - this.value;
+            $("#maintitle").css('color', 'rgba(' + v + ',' + v + ',' + v +',1)');
+        }
+
+        $('#maintitle').hover(
+            function () {
+                TweenMax.to(this, 2, { css:{ scaleX:1.1, scaleY:1.1 }, ease:Circ.easeOut});
+            },
+            function () {
+                TweenMax.to(this, 2, { css:{ scaleX:1, scaleY:1 }, ease:Circ.easeOut});
+            }
+        );
+
+        $("#slider").click(
+            changeBg      
+        );
+
+    </script>
+</html>
