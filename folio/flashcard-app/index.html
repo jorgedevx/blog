@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <style>
+            body { /* can also be whatever container */
+                /*display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                flex: 0 0 auto;*/
+            }
+
+            .container{
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                flex: 0 0 auto;
+            }
+
+            .card{
+                
+                border: solid 1px black;
+                width:400;
+                height:230;
+                box-shadow: 5px 10px #888888;
+                border-radius: 25px;
+                padding: 20px; 
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                -webkit-transform: translateY(50%);
+                -moz-transform: translateY(50%);
+                -ms-transform: translateY(50%);
+                -o-transform: translateY(50%);
+                transform: translateY(50%);
+            }
+
+            .cardtitle{
+                font-weight: bold;
+                font-size: 40px;
+            }
+
+            .cardbody{
+                padding: 10px;
+            }
+
+            .langs{
+                z-index: 2;
+            }
+
+            #addform{
+                z-index: 2;
+            }
+
+            /* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 3; /* Sit on top */
+                padding-top: 100px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+
+            /* The Close Button */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            label, p{
+                display: inline-block;
+                width: 140px;
+                text-align: right;
+            }​
+
+            input{
+                width: 60%;
+            }
+
+
+
+        </style>
+    </head>
+
+
+    <body>
+        <label for="langs" class="langs"> Language </label>
+
+        <select id="langs" class="langs" onchange="bbb();">
+          <option selected value="en"> English </option>
+          <option value="fr"> French </option>
+
+        </select> 
+
+        <button id="addform"> + </button>
+
+        <div class="container">
+            <div id="flashcard" class="card" onclick="aaa();">
+                <div id="cardtitle" class="cardtitle"></div>
+                <div id="cardbody" class="cardbody">
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p> Add a new card </p>
+              <form>
+                    <select id="langs2">
+                        <option selected value="en"> English </option>
+                        <option value="fr"> French </option>
+                    </select> 
+                    </br>
+
+                    <label> Expression </label>
+                    <input id="expr"></input>
+                    </br>
+                    
+
+                    <label> Description </label>
+                    <input id="desc"></input>
+                    </br>
+
+              </form>
+            </div>
+          
+          </div>
+
+    </body>
+
+
+    <script src="main.min.js"></script>
+</html>
