@@ -1,8 +1,8 @@
 
 window.onload = function(){
     var board = document.getElementById("board");
-    var aaa = 400;
-    var bbb = 20;
+    var aaa = 900;
+    var bbb = 30;
     var ccc = 500;
     var eee = [];
     for(var i=0; i<aaa; i++){ eee.push(false);}

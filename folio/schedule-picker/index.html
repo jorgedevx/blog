@@ -1,0 +1,37 @@
+<html>
+
+    <head>
+    <style>
+        #container{
+            z-index: 1;
+            position: flex;
+        }
+        .box{
+            border: 1px solid black;
+            width: 250;
+            height: 30;
+            text-align: center;
+            margin: auto;
+            margin-top:10;
+            padding-top: 5;
+        }
+        
+        .bookingFlag{
+            background-color: greenyellow;
+        }
+
+    </style>
+    </head>
+    <body>
+        <label for="range"> range in hours </label>
+        </br>
+        <label for="range"> (9:00 to 00:00): </label>
+        <select id= "range" style="z-index: 2;"></select>
+        <div id="container">
+            
+        </div>
+    </body>
+    <footer>
+        <script src="main.min.js"></script>
+    </footer>
+</html>
